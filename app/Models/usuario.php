@@ -4,12 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\contacto;
 
-class contacto extends Model
+class usuario extends Model
 {
     use HasFactory;
-    protected $table = "contacto";
+    protected $table = "usuario";
     protected $primaryKey = "id";
-    protected $fillable = ["nombresApellidos","email","telefono","asunto","mensaje"];
+    protected $fillable = ["nombres","apellidos","tipoId","identificacion","telefono","emailUser","profesion","rol"];
 }
