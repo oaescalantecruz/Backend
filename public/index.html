@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Desarrollador Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  
+    <!--Parte del home-->
+
+    <section id="inicio">
+
+            <div class="contenido">
+
+                <header>
+                    <div class="contenido-header">
+                            <h1>Curriculum Vitae OAESC</h1>
+                            
+                            <nav id="nav" class="">
+                                
+                            <ul id="links">
+                                    <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                                    <li><a href="#curriculum" onclick="seleccionar(this)">Curriculum Vitae</a></li>
+                                    <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                                    <li><a href="#tecontactamos" onclick="seleccionar(this)">Te contactamos</a></li>
+                            </ul>
+                        </nav>
+
+
+       
+
+    <!--Parte de iconos responsivos-->
+
+                            <div id="icono-nav" onclick="responsiveMenu()">
+
+                                <i class="fa-solid fa-bars"></i>
+
+                            </div>
+
+                            <!--Parte de iconos para las redes sociales-->
+
+                            <div class= "redes">
+                                <a href="https://www.facebook.com/profile.php?id=100008210322513"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://twitter.com/olmanescalante"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+
+                    </div>
+                </header>
+
+                <div class="presentacion">
+
+                        <p class="bienvenido">Bienvenidos</p>
+                        <h2>Mi nombre es <span>Olman Escalante</span>, soy Desarrollador web</h2>
+                        <p class="descripcion">Soy estudiante de Ingeniería en sistemas, con conocimientos para manejo de paquete Office, con sólidas bases en programación con Php, Framework .Net, JavaScript, HTML, CSS y C# con buen manejo y fuertes conocimientos de bases de datos Relacionales.</p>
+                        <a href="#servicios">Servicios</a>
+                </div>
+
+            </div>
+
+    </section>
+
+     <!--Parte de seccion sobre mi o curriculum vitae-->               
+        
+     <section id="curriculum">
+
+               <div class="contenedor-foto">
+                <img src="img/foto0002.jpg" alt="">
+               </div> 
+               <div class="curriculum">
+                <p class="titulo-seccion">Acerca de mi</p>
+                <h2>Hola de nuevo, me llamo <span>Olman Escalante</span></h2>
+                <h3>Desarrollador Web FullStack</h3>
+                <p>Tengo también excelentes conocimientos en bases de datos relacionales como Oracle, SQL server y MySQL, también tengo conocimientos de bases de datos no relacionales como MongoDB, con excelentes relaciones personales, buena aceptabilidad y adaptación al aprendizaje continuo, persistente y orientado a obtener resultados positivos.</p>
+                    <p>Actualmente me encuentro practicando la carrera en este periodo estoy haciendo la profundización de prácticas en las áreas de programación y bases de datos ya que como Ingeniero de sistemas estos temas son mis favoritos y a la espera de tener más experiencia laboral en estos campos.</p>
+                        <video src="video/VID_.mp4" width="420" height="240" controls></video>
+                        <br>
+                        <a href="docs/HojaVidacopia1.pdf" download="cv">Descargar CV</a>
+               </div>
+     </section>
+
+     <!--Parte de seccion sobre los servicios ofrecidos-->
+     
+     <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Diseño de páginas Web</li>
+                        <li>Imágenes y video</li>
+                        <li>SEO</li>
+                        
+                </ul>
+                <P>Soy responsable de la creación y el diseño visual de sitios web. Su objetivo principal es combinar elementos estéticos con la funcionalidad y la usabilidad para crear una experiencia de usuario atractiva y efectiva.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación en PHP</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Programación Web  </li>
+                        <li>  Tecnología Back-end </li>
+                        <li> Sitios dinámicos </li>
+                        
+                </ul>
+                <P>Escribir código PHP para desarrollar aplicaciones web dinámicas. Esto implica la creación de funciones, clases y scripts que interactúen con bases de datos, procesen formularios, y gestionen sesiones.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-google"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Posicionamiento Web</li>
+                        <li>Google Analytics</li>
+                        <li>SEO y Adsense</li>
+                        
+                </ul>
+                <P>Lograr que un sitio web aparezca en los primeros lugares de los resultados de búsqueda cuando los usuarios buscan términos o palabras clave relevantes para el contenido del sitio. Cuanto más alta sea la posición en los resultados de búsqueda, mayor será la probabilidad de que los usuarios visiten el sitio.</P>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-aws"></i></span>
+                <h4>Alojamiento de Sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Hosting Web</li>
+                        <li>Heroku</li>
+                        <li>AWS</li>
+                        
+                </ul>
+                <P>Servicio que permite almacenar y publicar un sitio web en Internet. En otras palabras, es el espacio en línea donde se guardan los archivos, las bases de datos y otros elementos relacionados con un sitio web, y que permite que dicho sitio sea accesible para los usuarios en todo momento y desde cualquier lugar.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Creador de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Portales Web</li>
+                        <li>Identidad corporativa</li>
+                        <li>Diseño responsivo</li>
+                        
+                </ul>
+                <P>Combinamos habilidades de diseño, desarrollo front-end y, en algunos casos, desarrollo back-end para construir sitios web atractivos y funcionales. Nuestro objetivo es crear una experiencia de usuario agradable y lograr los objetivos específicos del sitio web.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Diseño y administración de bases de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                        <li>Oracle</li>
+                        <li>MySql</li>
+                        <li>MongoDB</li>
+                        
+                </ul>
+                <P>Podemos administrar, diseñar, implementar y mantener las bases de datos de su organización. Nuestro objetivo es garantizar que las bases de datos estén organizadas, seguras, disponibles y funcionando de manera eficiente.</P>
+            </div>
+        </div>
+     </section>
+
+     <!--Parte de seccion sobre te contactamos-->
+     <section id="tecontactamos">
+        <h3 class="titulo-seccion">Te contactamos</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombres y Apellidos" class="input-mitad" required><br>
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" required><br>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Teléfono de Contacto" class="input-mitad" required>
+                    <input type="text" placeholder="Asunto" class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+     </section>
+
+     <!--Parte de seccion sobre la visualizacion del footer-->
+
+     <footer>
+        <p>Todos los Derechos Reservados - 2023</p>
+        <div class= "redes">
+            <a href="https://www.facebook.com/profile.php?id=100008210322513"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/olmanescalante"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+     </footer>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
