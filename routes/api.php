@@ -14,11 +14,25 @@ use App\Http\Controllers\Api\ContactoController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-// * Endpoints **
+// * Endpoints ** //
 
-Route::get("/contacto",[ContactoController::class,'read']);
+//Route::get("/contacto",[ContactoController::class,'read']);*/
 
 Route::post("/crear",[ContactoController::class,'create']);
+
+Route::post("/usuario",[ContactoController::class,'createUser']);
+
+Route::get("/usuario",[ContactoController::class,'readUser']);
+
+Route::put("/usuario",[ContactoController::class,'update']);
+
+
+Route::delete("/usuario",[ContactoController::class,'delete']);
+
+/*Route::delete("/usuario",function (Request $request) {
+    $message = ["Mensaje:" => "Eliminacion de Usuario Exitosa!"];
+    return response()->json($message);
+});*/
 
 
 /*Route::get("/contacto",function(Request $request){

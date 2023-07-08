@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/usuario', [ContactoController::class, 'index'])->name('usuarios.index');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+

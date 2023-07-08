@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Desarrollador Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app.css">
@@ -168,21 +170,24 @@
 
      <!--Parte de seccion sobre te contactamos-->
      <section id="tecontactamos">
-        <h3 class="titulo-seccion">Te contactamos</h3>
+        <h3 class="titulo-seccion">Nosotros Te contactamos</h3>
         <div class="contenedor-form">
             <form action="">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombres y Apellidos" class="input-mitad" required><br>
-                    <input type="text" placeholder="Dirección de Email" class="input-mitad" required><br>
+                    <input type="text" placeholder="Nombres y Apellidos" class="input-mitad" id="nombresApellidos" required><br>
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" id="email" required><br>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Teléfono de Contacto" class="input-mitad" required>
-                    <input type="text" placeholder="Asunto" class="input-mitad" required>
+                    <input type="text" placeholder="Teléfono de Contacto" class="input-mitad" id="telefono" required>
+                    <input type="text" placeholder="Asunto" class="input-mitad" id="asunto" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
                 </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="saveContact()">
+
+                </div>
             </form>
         </div>
      </section>
@@ -190,13 +195,17 @@
      <!--Parte de seccion sobre la visualizacion del footer-->
 
      <footer>
-        <p>Todos los Derechos Reservados - 2023</p>
+        <a href="opciones.html">Gestion Usuarios</a>
+        <p>Todos los Derechos Reservados - © 2023</p>
         <div class= "redes">
             <a href="https://www.facebook.com/profile.php?id=100008210322513"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://twitter.com/olmanescalante"><i class="fa-brands fa-twitter"></i></a>
         </div>
      </footer>
+     
+
+     <script src="scriptB.js"></script>
 
      <script src="script.js"></script>
 
