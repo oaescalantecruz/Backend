@@ -10,7 +10,7 @@ use App\Models\usuario;
 
 class ContactoController extends Controller
 {
-    //
+    //comentarios javascript
 // Funcion o metodo para consultar contactos form del frontend //*--
 
 public function read(Request $request){
@@ -124,6 +124,7 @@ public function readUser(){
     //return $data;
     return response()->json($data);
 }
+// funcion para mostrar en una vista los usuarios registrados
 
 public function index(Request $request){
         

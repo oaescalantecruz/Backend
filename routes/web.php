@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\Api\ContactoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,9 @@ use App\Http\Controllers\ContactoController;
 |
 */
 
-Route::get('/usuario', [ContactoController::class, 'index'])->name('usuarios.index');
+// Ruta mas mostrar en una vista los usuarios registrados //
+
+Route::get('/usuarios', [ContactoController::class, 'index'])->name('usuarios.index');
 
 
 Route::get('/', function () {
